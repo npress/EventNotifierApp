@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry exported="true" kind="lib" path="C:/rails/drivers/mysql-connector-java-3.1.14/mysql-connector-java-3.1.14-bin.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/eclipse/plugins/javax.servlet_2.5.0.v200910301333.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/eclipse/plugins/javax.activation_1.1.0.v201005080500.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/eclipse/plugins/javax.mail_1.4.0.v201005080615.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/eclipse/plugins/javax.servlet.jsp.source_2.0.0.v200806031607.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/eclipse/plugins/javax.servlet.jsp_2.0.0.v200806031607.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/eclipse/plugins/javax.servlet.source_2.5.0.v200910301333.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

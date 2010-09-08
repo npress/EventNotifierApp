@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Sealed: true
+Main-Class: AlertSystem
+Class-Path: EventNotifier_lib/javax.activation_1.1.0.v201005080500.jar EventNotifier_lib/javax.mail_1.4.0.v201005080615.jar EventNotifier_lib/javax.servlet.jsp.source_2.0.0.v200806031607.jar EventNotifier_lib/javax.servlet.jsp_2.0.0.v200806031607.jar EventNotifier_lib/javax.servlet.source_2.5.0.v200910301333.jar EventNotifier_lib/javax.servlet_2.5.0.v200910301333 EventNotifier_lib/mysql-connector-java-3.1.14-bin.jar 
