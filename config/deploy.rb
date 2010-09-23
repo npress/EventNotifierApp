@@ -18,28 +18,26 @@ load 'deploy'
 
 # Webistrano defaults
   set :webistrano_project, "non_rails_app"
-  set :webistrano_stage, "prod"
+  set :webistrano_stage, "dev"
 
 
-  set :admin_runner, "#{user}"
+  set :admin_runner, "npress"
 
   set :application, "non_rails_app"
 
-  set :deploy_to, "/Users/npress/non_rails_app"
+  set :deploy_to, "/Users/npress/non_rails_app_from131"
 
   set :deploy_via, :export
 
-  set :password, "press@SGE"
+  set :password, "npress123"
+
+  set :rails_env, "development"
 
   set :repository, "git@github.com:npress/EventNotifierApp.git"
 
   set :runner, "npress"
 
   set :scm, :git
-
-
-
-  set :scm_username, "npress"
 
   set :use_sudo, true
 
@@ -85,7 +83,8 @@ load 'deploy'
 # ================================================================
 
 
-  run "ls";
-run "echo 'Something written here.' > newfile  ";
+  task :cdndeploy do
+ puts "Uploading the files from ~releases_storage/client_stage "
+ end
 
 

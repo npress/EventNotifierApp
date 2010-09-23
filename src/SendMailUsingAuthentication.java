@@ -46,13 +46,13 @@ import java.io.*;
 public class SendMailUsingAuthentication
 {
 
-  private static final String SMTP_HOST_NAME = "exchange.zerolag.com";
-  private static final String SMTP_AUTH_USER = "nema.press@sleepygiant.com";
-  private static final String SMTP_AUTH_PWD  = Pass.get();
+  private static final String SMTP_HOST_NAME = "localhost";
+  //private static final String SMTP_AUTH_USER = "nema.press@sleepygiant.com";
+  //private static final String SMTP_AUTH_PWD  = Pass.get();
 
   private static final String emailMsgTxt      = "Alert Notification Text";
-  private static final String emailSubjectTxt  = "Nema's Email Alert";
-  private static final String emailFromAddress = "npress@sleepygiant.com";
+  private static final String emailSubjectTxt  = "Alert System Email Alert";
+  private static final String emailFromAddress = "development@sleepygiant.com";
 
   // Add List of Email address to who email needs to be sent to
   private static final String[] emailList = {"nema.press@sleepygiant.com"};
@@ -88,7 +88,6 @@ public class SendMailUsingAuthentication
 	props.put("mail.smtp.starttls.enable","false");
 	props.put("mail.smtp.auth", "false");
 	
-	//props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 	
 	
 	props.put("mail.smtp.socketFactory.fallback", "true");
@@ -130,8 +129,8 @@ private class SMTPAuthenticator extends javax.mail.Authenticator
 
     public PasswordAuthentication getPasswordAuthentication()
     {
-        String username = SMTP_AUTH_USER;
-        String password = SMTP_AUTH_PWD;
+        String username = "user"; //SMTP_AUTH_USER;
+        String password = "pass";     //SMTP_AUTH_PWD;
         return new PasswordAuthentication(username, password);
     }
 }
